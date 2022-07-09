@@ -1,22 +1,165 @@
-<div id="newsspec-19854-app" class="news-app-promo">
-    <div class="news-app-promo-text">
-        <div class="news-app-promo-text__tagline">The best way to get news on the go</div><br>
-        <div class="news-app-promo-text__download">Download the NAYN.CO App.</div>
-    </div>
-    <div class="news-app-promo__section">
-        <div class="news-app-promo-subsection">
-            <img class="news-app-promo__bbc-logo" src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/bbc_news_logo.svg" width="106" height="106">
-        </div>
-        <div class="news-app-promo-subsection">
-            <a class="news-app-promo-subsection--link news-app-promo-subsection--playstore" href="https://play.google.com/store/apps/details?id=bbc.mobile.news.ww&amp;hl=en" target="_parent">
-                <img class="news-app-promo__play-store" src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/google_play_store.svg" width="161" height="auto" border="0">
-            </a>
-            <a class="news-app-promo-subsection--link news-app-promo-subsection--appstore" href="https://itunes.apple.com/us/app/bbc-news/id364147881?mt=8" target="_parent">
-                <img class="news-app-promo__app-store" src="//news.files.bbci.co.uk/include/newsspec/19854/assets/app-project-assets/ios_app_store.svg" width="161" height="auto" border="0">
-            </a>
-        </div>
-    </div>
-    <div class="news-app-promo__section">
+<!-- 
 
-    </div>
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<html>
+  
+  <Header>
+    <h1 id= "title"> Iphone Model Purchase</h1>
+    <body>
+      <p id="description"> Fill details below to complete your Iphone order</p>
+      <form id="survey-form">
+        <div class="input-headings">
+          <label form="name" id="name-label">Name</lable>
+          <input id="name" type="text"
+                 name="name" placeholder="Steve Jobs" class="form-inputs" required> </input>
+        <br>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" placeholder="Stevejobs@gmail.com" class="form-inputs" required>
+       </input>
+      <br>
+      <label for="number" id="number-label"> Age </label>
+      <input id="number"
+             type="number" name="number" placeholder="21" min="21" max="56" class="form-inputs" required> </input>
+    <br>
+    <label for="dropdown"
+      id="model"> Select Model </label>
+    <select id="dropdown">
+      <option value="model-SE"> Model-SE</option>
+      <option value="model-13"> Model-13</option>
+      <option value="model-14"> Model-14</option>
+      <option value="model-15">Model-15</option>
+      <option value="model-16">Model-16</option>
+    </select>
+    <br>
+    <br>
+    <label for="model-color"
+           id="model-color"><b> Model color:</b></label>
+    <br>
+    
+    <input id="model-color"type="radio" id="graphite"name="color" value="graphite">
+    <label for="model-color">graphit</label>
+    <br>
+    <input id="model-color"
+           type="radio"id="gold" name="color" value="gold">
+    <label for="model-color">gold</label>
+    <br>
+    <input id="model-color"
+           type="radio" id="silver"
+           name="color" value="silver">
+    <label for="model-color">silver</label>
+    <input id="model-color" id="ros gold" name="color" value="ros gold">
+    <label for="model-color">ros gold</label>
+    
+    <br>
+    <label for="features"><b> Add features: </b> </label>
+    <br>
+    <input id="checkbox"
+           type="checkbox" name="features" value="face-id">
+    <label for="checkbox">unlock by (face-id) = $1000</label>
+    <br>
+    <input id="checkbox"  type="checkbox" name="features" value="finger-print">
+    <label for="checkbox">unlock by (finger print) -$100</label>
+    <br>
+    <input id="checkbox" type="checkbox"  name="features" value="A-12">
+    <label for="checkbox"> A-12 chip(not too much fast) -$200</label>
+    <br>
+    <br> 
+    <label id="textarea">Additional Comments</label>
+    <br>
+    <textarea id="textarea" name="instruction" rows="5" 
+              cols="40"></textarea>
+    <input id="submit" type="submit" value="place-order" class="submit-button">
+   <style>
+  .stars {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+  .star-1 {
+    margin-top:0%;
+    margin-left: 60%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  .star-2 {
+    margin-top: 15%;
+    margin-left: 25%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  .star-3 {
+    margin-top: 60%;
+    margin-left: 50%;
+    animation-duration: 1s;
+    animation-name: twinkle;
+  }
+
+  @keyframes twinkle {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+  }
+</style>
+
+<div id="back"></div>
+<div class="star-1 stars"></div>
+<div class="star-2 stars"></div>
+<div class="star-3 stars"></div>
+
+
 </div>
+</form></body>
+</html>
+<header>
+<h1>Iphone Model Purchase</h1>
+<style>
+h1{color: pink;
+background-color: green;
+font-size: 30px;
+  border-style: solid;
+  border-color: pink;
+    border-width: 5px;
+    text-align: center;
+position: relative;
+    margin: auto;
+
+
+ </h1></header>
+ 
+ }
+</style>
+<body></body>
+<style>
+  body{background-color: silver;
+  padding: 10px 20px 10px 20px;
+  }
+  </style>
+    </div>
+  
+  </form>
+</body>
+</html>
